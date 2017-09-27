@@ -97,6 +97,7 @@ body, html {
 
 #toggle{
     font-size: 12px;
+    font-weight:bolder;
 }
 
 #userInfo div i {
