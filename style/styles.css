@@ -1,0 +1,45 @@
+@import url("reset.css");
+body, html {
+    height: 100%;
+}
+
+.flex-container {
+    font-family:Slack-Lato,appleLogo,sans-serif;
+    font-size: 20px;
+    display: flex;
+    height:100%; 
+}
+
+.flex-element {
+    
+}
+
+#slack-teams{
+    width: 3%;
+    height: 100%;
+    background-color:#3A3238;
+}
+
+#menu {
+    width: 17%;
+    background-color: #4E444C;
+}
+
+#upper-dock {
+    width:100%;
+    height: 30px;
+}
+
+#messages {
+    width:70%;
+}
+
+#about-channel {
+    width: 30%;
+}
+
+#main-area {
+    width: 80%;
+    flex-direction: column;
+}
+
