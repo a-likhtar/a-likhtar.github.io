@@ -1,45 +1,113 @@
 @import url("reset.css");
 body, html {
     height: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
+/* Common styles */
 .flex-container {
-    font-family:Slack-Lato,appleLogo,sans-serif;
     font-size: 20px;
     display: flex;
     height:100%; 
 }
 
-.flex-element {
-    
-}
-
 #slack-teams{
-    width: 3%;
-    height: 100%;
+    flex: 0 0 70px;
     background-color:#3A3238;
 }
 
 #menu {
-    width: 17%;
-    background-color: #4E444C;
+    flex: 0 0 200px;
+    background-color: #574754;
 }
 
 #upper-dock {
     width:100%;
     height: 30px;
+    background-color: #613F8D;
 }
 
 #messages {
     width:70%;
+    background-color: #3C773A;    
 }
 
 #about-channel {
     width: 30%;
+    background-color: #B0DD5C;    
 }
 
 #main-area {
-    width: 80%;
+    width: 100%;
     flex-direction: column;
 }
+
+/* Slack teams styles */
+
+#slack-teams a div img {
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto 5px auto;
+    width: 35px;
+    opacity: 0.3;
+}
+
+
+#slack-teams a div p {
+    text-align:center;
+    font-size: 12px;
+}
+
+#slack-teams a {
+    text-decoration: none;
+    color: #9C9090;
+}
+#slack-teams a div img#active {
+    opacity: 1;
+}
+
+#addChannel {
+    padding-top:10px;
+    text-align: center;
+}
+
+/* Menu styles */
+
+#menu {
+    padding:10px 15px 10px 15px;
+    color:#929192;
+}
+
+#menu p i{
+    font-size: 12px;
+}
+ 
+#menu p {
+    font-weight: bold;
+    font-size: 16px;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+#bell {
+    float: right;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#toggle{
+    font-size: 12px;
+}
+
+#userInfo div i {
+    color: rgba(125, 231, 39, 0.81);
+}
+
+#userInfo div p {
+    font-size: 14px;
+}
+
+
+
+
 
