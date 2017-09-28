@@ -74,7 +74,6 @@ body, html {
 /* Menu styles */
 
 #menu {
-    padding:10px 15px 10px 15px;
     color:#929192;
 }
 
@@ -95,9 +94,13 @@ body, html {
     margin-top: 5px;
 }
 
-#toggle{
+#toggleBtn{
     font-size: 12px;
     font-weight:bolder;
+}
+
+#userInfo{
+    padding: 5px 15px;
 }
 
 #userInfo div i {
@@ -106,6 +109,19 @@ body, html {
 
 #userInfo div p {
     font-size: 14px;
+}
+
+#userInfo:hover p{
+    color: #ffffff;
+}
+
+#userInfo:hover {
+    background-color: #3A3238;
+    cursor:pointer;    
+}
+
+#bell:hover {
+    color:white;
 }
 
 

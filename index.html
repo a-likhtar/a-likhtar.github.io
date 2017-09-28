@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Slack</title>
+  <title>AIS Brest - Slack</title>
   <meta name="description" content="The Slack">
   <meta name="author" content="Andrey Likhtar">
+  <link rel="shortcut icon" href="images/slack-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="style/styles.css?v=1.0">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -40,13 +41,15 @@
         </div>
         <div class="flex-element" id = "menu">
             <div id = "userInfo">
-                <p style="color:white">AIS </p>
-                <i id = "toggle"> &#709</i>
+                <p style="color:white">AIS <i class="fa fa-angle-down" id = "toggleBtn" aria-hidden="true"></i></p>
                 <i class="fa fa-bell-o" aria-hidden="true" id="bell"></i>
                 <div>
                     <i>&#9679</i>
                     <p>Andrey Likhtar</p>            
                 </div>
+            </div>
+            <div id="allThreds">
+                <p>All threads</p>
             </div>
         </div>
         <div class="flex-container" id = "main-area">
