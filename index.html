@@ -1,34 +1,36 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>AIS Brest - Slack</title>
-  <meta name="description" content="The Slack">
-  <meta name="author" content="Andrey Likhtar">
-  <link rel="shortcut icon" href="images/slack-icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style/styles.css?v=1.0">
-  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+
+    <title>AIS Brest - Slack</title>
+    <meta name="description" content="The Slack">
+    <meta name="author" content="Andrey Likhtar">
+    <link rel="shortcut icon" href="images/slack-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/styles.css?v=1.0">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
     <div class="flex-container">
-        <div class="flex-element" id = "slack-teams">
+        <div class="flex-element" id="slack-teams">
             <a href="#team1">
                 <div>
-                    <img src="images/rolling_scopes.png"/>
+                    <img src="images/rolling_scopes.png" />
                     <p>Ctrl+1</p>
                 </div>
             </a>
             <a href="#team2">
                 <div>
-                    <img src="images/ais_logo.jpg" id = "active"/>
+                    <img src="images/ais_logo.jpg" id="active" />
                     <p>Ctrl+2</p>
                 </div>
             </a>
             <a href="#team3">
                 <div>
-                    <img src="images/slack-icon.png"/>
+                    <img src="images/slack-icon.png" />
                     <p>Ctrl+3</p>
                 </div>
             </a>
@@ -37,15 +39,15 @@
                     <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
                 </div>
             </a>
-            
+
         </div>
-        <div class="flex-element" id = "menu">
-            <div id = "userInfo" class="menuBlocks hovered">
-                <p style="color:white">AIS <i class="fa fa-angle-down" id = "toggleBtn" aria-hidden="true"></i></p>
+        <div class="flex-element" id="menu">
+            <div id="userInfo" class="menuBlocks hovered">
+                <p style="color:white">AIS <i class="fa fa-angle-down" id="toggleBtn" aria-hidden="true"></i></p>
                 <i class="fa fa-bell-o" aria-hidden="true" id="bell"></i>
                 <div>
                     <i class="online">&#9679</i>
-                    <p>Andrey Likhtar</p>            
+                    <p>Andrey Likhtar</p>
                 </div>
             </div>
             <div id="allThreads" class="menuBlocks hovered">
@@ -82,60 +84,80 @@
             <div id="invitePeople" class="menuBlocks">
                 <a href="#invitePeople"><span><i class="fa fa-plus" style="font-size: 12px;" aria-hidden="true"></i>       Invite People</span></a>
             </div>
-            <div id = "apps" class="menuBlocks">
-                    <p>Apps</p>
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            <div id="apps" class="menuBlocks">
+                <p>Apps</p>
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </div>
             <div id="quickSwitch">
-               <a href="#search"><img src="images/preview.png"></a>
+                <a href="#search"><img src="images/preview.png"></a>
             </div>
         </div>
-        <div class="flex-container" id = "main-area">
-            <div id = "upper-dock">
+        <div class="flex-container" id="main-area">
+            <div id="upper-dock">
                 <div class="topic">
                     <div class="flex-element">
                         <p>#study</p>
                     </div>
                     <div id="icons">
-                        <div>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </div>
+                        <a href="#"><div>
+                            <img src="images/star.png">
+                        </div></a>
                         <div class="vertical"></div>
-                        <div>
-                                <img src="images/avatar.png"> <span>14</span>
-                        </div>
-                        <div class="vertical"></div>                        
-                        <div>
-                                <img src="images/push-pin.png"> <span>28</span>
-                        </div>
-                        <div class="vertical"></div>                        
-                        <div>
-                                <span>Add a topic</span>
-                        </div>
+                        <a href="#"><div>
+                            <img src="images/avatar.png"> <span>14</span>
+                        </div></a>
+                        <div class="vertical"></div>
+                        <a href="#"><div>
+                            <img src="images/push-pin.png"> <span>28</span>
+                        </div></a>
+                        <div class="vertical"></div>
+                        <a href="#"><div>
+                            <span>Add a topic</span>
+                        </div></a>
                     </div>
                 </div>
                 <div id="search">
-                    <div>
+                    <a href="#"><div>
                         <img src="images/phone-call.png">
                     </div>
-                    <div>
+                    <a href="#"><div>
                         <i>ⓘ</i>
-                    </div>
-                    <div>
+                    </div></a>
+                    <a href="#"><div>
                         <img src="images/gear-loading.png">
+                    </div></a>
+                    <div class="searchField">
+                        <span class="fa fa-search"></span>
+                        <input class="search" type="text" placeholder="Search">
                     </div>
-                    <div>
-                        <input type="text" placeholder="Search">
-                    </div>
-                </div>    
+                    <a href="#"><div>
+                        <img src="images/email.png">
+                    </div></a>
+                    <a href="#"><div>
+                        <img src="images/star.png">
+                    </div></a>
+                    <a href="#"><div>
+                        <img src="images/more.png">
+                    </div></a>
+                </div>
             </div>
-            <div class="flex-container">
-                <div class="flex-element" id = "messages">
+            <div class="flex-container" id="midArea">
+                <div class="flex-container" id="messageArea">
+                    <div id="messages">
+                        
+                    </div>
+                    <div id="inputMessage">
+                        <form>
+                            <button type="submit">
+                            <input type="text">
+                        </form>    
+                    </div>
                 </div>
-                <div class="flex-element" id = "about-channel">
+                <div class="flex-element" id="about-channel">
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 </body>
+
 </html>
