@@ -28,6 +28,9 @@ body, html {
 #about-channel {
     width:30%;
     min-width:200px;
+    border-left:1px solid #D3D3D3;
+    font-size:18px;
+    color: #817B7B;
 }
 
 #main-area {
@@ -229,6 +232,30 @@ div#channels a, div#directMessages a {
     margin-top: 2px;
 }
 
+#edit_topic {
+    display: none;    
+}
+
+#edit_topic:hover {
+    text-decoration: underline;
+}
+
+#add_topic:hover #edit_topic {
+    display: block;
+    color: #217DE0;
+    float:right;
+    padding-left: 5px;
+}
+
+#edit_topic:hover {
+    cursor: pointer;
+}   
+
+#add_topic:hover #bordered{
+    border:1px solid #CAC6C6;
+    border-radius: 3px;
+}
+
 #icons {
     display:flex;
     flex-direction: row;
@@ -236,6 +263,10 @@ div#channels a, div#directMessages a {
     justify-content: space-between;
     font-size: 14px;
     color: #B8B8B8;
+}
+
+#icons span {
+    font-family: 'Lato', sans-serif;
 }
 
 #icons div, #search div {
@@ -249,11 +280,6 @@ div#channels a, div#directMessages a {
 #icons div:last-child span {
     font-style: italic;
 }
-
-#icons span {
-    vertical-align: text-top;
-}
-
 
 #search {
     display: flex;
@@ -397,13 +423,69 @@ input[type="text"]:focus {
     font-size: 18px;
     display: flex;
     flex:1;
+    color: #000000;
 }
 
 
-#about-channel div.row-container:first-child{
-    border:1px solid #D3D3D3;
-    background-color: #f9f9f9;
-    border-top:none;
+#about-channel div.row-container{
+    border-bottom:1px solid #D3D3D3;
+}
+
+#about-channel .row-container{
+    padding: 20px 10px;
+}
+
+#about-channel .row-container:hover {
+    background-color: #F5EEEE;
+
+}
+
+#about-channel span{
+    display: flex;
+    flex:1;
+    padding: 0 5px;
+}
+
+#about-channel i {
+    width: 20px;
+    height: 25px;
+}
+
+#about-channel div.row-container i:last-child{
+    color: #ADA2A2;
+}
+
+#about-channel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blue-color {
+    color:#217DE0
+}
+.green-color {
+    color:#37CA32;
+}
+.yellow-color {
+    color:#E4D533;    
+}
+.pink-color{
+    color:#C940B2;    
+}
+.orange-color{
+    color:#DA631F;    
+}
+
+.blue-hover:hover {
+    color: #217DE0;
+}
+
+.red-hover:hover {
+    color: #DD1111;
+}
+
+.yellow-hover:hover {
+    color:#E4D533;        
 }
 
 
