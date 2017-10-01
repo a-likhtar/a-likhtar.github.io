@@ -342,6 +342,11 @@ input[type="text"]:focus {
     overflow: auto;
 }
 
+.message {
+    display: flex;
+    flex:1;
+}
+
 #messages img {
     border-radius: 5px;
     width: 40px;
@@ -352,12 +357,44 @@ input[type="text"]:focus {
     font-size: 15px;
 }
 
-#userHeader {
+.userHeader {
     font-weight: bolder;
 }
 
 #messages div.column-container p {
     margin-bottom: 5px;
+}
+
+.addReaction {
+    display:none;
+}
+
+#messages .row-container:hover .addReaction {
+    display: flex;
+}
+
+.addReaction i {
+    padding:5px;
+    border:1px solid #B3AAAA;
+    border-right:none;
+    width:32px;
+    height:32px;
+    box-sizing: border-box;
+    color: #8A8080;
+}
+
+.addReaction i:hover {
+    color:#217DE0;
+    cursor: pointer; 
+}
+
+.addReaction i:first-child {
+    border-radius: 5px 0  0 5px;
+}
+
+.addReaction i:last-child {
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid #B3AAAA;
 }
 
 /* Type message */
@@ -410,7 +447,7 @@ input[type="text"]:focus {
 .column-container {
     display:flex;
     flex-direction:column;
-    padding: 5px 10px; 
+    padding: 0 10px; 
 }
 
 .row-container {
