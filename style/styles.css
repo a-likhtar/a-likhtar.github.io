@@ -24,7 +24,6 @@ body, html {
     overflow-x: hidden;
 }
 
-
 #about-channel {
     width:25%;
     height: 100%;
@@ -49,7 +48,6 @@ body, html {
     width: 35px;
     opacity: 0.3;
 }
-
 
 #slack-teams a div p {
     text-align:center;
@@ -299,7 +297,6 @@ input[type="text"]{
     transition: width 0.4s ease-in-out;
 }
 
-
 input[type="text"]:focus {
     outline: none;
     width: 230px;
@@ -370,6 +367,23 @@ input[type="text"]:focus {
 
 #messages .row-container:hover .addReaction {
     display: flex;
+}
+
+.date-line-wrapper {
+    width: 100%; 
+    height: 20px; 
+    border-bottom: 1px solid #CEC2C2; 
+    text-align: center;
+}
+
+.date-line {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3D3939; 
+    padding:0 10px;
+    background-color: white;
+    position: relative;
+    top:5px;    
 }
 
 .addReaction i {
@@ -469,7 +483,6 @@ input[type="text"]:focus {
 }
 
 /* About channels */
-
 #about p{
     font-weight: bold;
     font-size: 18px;
@@ -477,7 +490,6 @@ input[type="text"]:focus {
     flex:1;
     color: #000000;
 }
-
 
 #about-channel a.row-container, #about{
     border-bottom:1px solid #D3D3D3;
@@ -539,10 +551,7 @@ input[type="text"]:focus {
 .yellow-hover:hover {
     color:#E4D533;        
 }
-
-
 /* Drop down menu for channel details */
-
 .drop-items {
     padding: 10px 15px;
 }
@@ -592,6 +601,7 @@ input[type="text"]:focus {
     margin: 5px 0;
     font-size: 16px;
 }
+
 
 
 
