@@ -26,9 +26,9 @@ body, html {
 
 
 #about-channel {
-    width:35%;
+    width:25%;
     height: 100%;
-    min-width:250px;
+    min-width: 250px;
     border-left:1px solid #D3D3D3;
     font-size:18px;
     color: #817B7B;
@@ -325,11 +325,10 @@ input[type="text"]:focus {
 
 #midArea {
     display: flex;
-    flex-direction: row;
 }
 
 #messageArea{
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
 }
@@ -337,7 +336,7 @@ input[type="text"]:focus {
 #messages {
     min-width: 300px;
     width:100%;
-    height: 100%;
+    height: 95%;
     min-height: 300px;
     overflow: auto;
 }
@@ -400,27 +399,41 @@ input[type="text"]:focus {
 /* Type message */
 #inputMessage{
     display:flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;        
+    width: 97%;
+    max-width: 1300px;
+    margin:10px;
+    box-sizing: border-box;
+    border:2px solid #696262;
+    border-radius: 5px;
+    height:50px;
 }
 
-#inputMessage div:first-child {
-    border:2px solid #A19F9F;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 35px;
-    border-right:none;
+#inputMessagesSmile {
+    padding: 5px 5px;
+    display: flex;
+    color:#696262;
+    margin-top:5px;
+}
+
+#inputMessagesSmile i {
+    margin-right:5px;
+}
+
+#inputMessagesSmile i:hover {
+    font-size: 20px;
+}
+
+#plus {
+    align-items: stretch;
+    line-height: 1.4;
     font-size:24px;
     font-weight: bold;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: #A19F9F;
+    color: #696262;
+    padding: 5px 10px;
+    border-right:2px solid #696262;
 }
 
-#inputMessage div:first-child:hover {
+#plus:hover {
     background-color: #56b68b;
     color: #ffffff;
     cursor: pointer;
@@ -430,13 +443,12 @@ input[type="text"]:focus {
     outline: none;
     padding: 0 10px;
     font-size: 16px;
-    line-height: 35px;
     width: 100%;
-    height: 40px;
-    border:2px solid #A19F9F;
+    max-height: 100px;
+    overflow-y:auto;
+    line-height: 1.75;
+    padding: 5px 5px;
     color: #3D3939;
-    border-top-right-radius: 5px; 
-    border-bottom-right-radius: 5px; 
 }
 
 [placeholder]:empty:before {
