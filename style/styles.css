@@ -369,6 +369,10 @@ input[type="text"]:focus {
     display: flex;
 }
 
+#messages .row-container:hover {
+    background-color:#FCF8F8;     
+}
+
 .date-line-wrapper {
     width: 100%; 
     height: 20px; 
@@ -383,7 +387,9 @@ input[type="text"]:focus {
     padding:0 10px;
     background-color: white;
     position: relative;
-    top:5px;    
+    top:5px;
+    border: 1px solid white;
+    border-radius: 10px;   
 }
 
 .addReaction i {
