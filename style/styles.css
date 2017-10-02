@@ -370,7 +370,7 @@ input[type="text"]:focus {
 }
 
 #messages .row-container:hover {
-    background-color:#FCF8F8;     
+    background-color:#F5F4F4;     
 }
 
 .date-line-wrapper {
@@ -436,7 +436,24 @@ input[type="text"]:focus {
 }
 
 #inputMessagesSmile i {
-    margin-right:5px;
+    margin-right:10px;
+}
+
+#inputMessagesSmile i.fa-at:hover{
+    cursor: pointer;
+    color:#0085DD;
+    transition-duration: 150ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    transform: scale(1.25,1.25);
+}
+#inputMessagesSmile i.fa-smile-o:hover{
+    cursor: pointer;
+    color:#FCE727;
+    transition-duration: 150ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    transform: scale(1.25,1.25);
 }
 
 #inputMessagesSmile i:hover {
@@ -506,7 +523,7 @@ input[type="text"]:focus {
 }
 
 #about-channel .row-container:hover {
-    background-color: #F5EEEE;
+    background-color: #F5F4F4;
 
 }
 
@@ -577,6 +594,15 @@ input[type="text"]:focus {
     height: 150px;
     overflow: hidden;
 }
+
+.drop-item::after {
+    content: ''; 
+    position: relative; 
+    right: 0; bottom: -5px; 
+    width: 100%; 
+    height: 10px; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #FDFDFB 100%);
+   }
 
 .drop-items{
     display: none;
