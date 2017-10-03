@@ -694,7 +694,8 @@ details[open] .drop-item{
     top: 25px;
     left: 50%; 
     margin-left: -60px;
-
+    transition: visibility 0s linear, opacity 0.2s linear;
+    opacity: 0;
     /* Position the tooltip */
     position: absolute;
     z-index: 500;
@@ -710,6 +711,7 @@ details[open] .drop-item{
 
 .toolTip:hover .toolTipText {
     visibility: visible;
+    opacity: 1;
 }
 
 .toolTip .toolTipText::after {
