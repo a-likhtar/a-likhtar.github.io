@@ -701,7 +701,11 @@ details[open] .drop-item{
 }
 
 .toolTipLast .toolTipText {
-    left: -50px;
+    left: -80px;
+}
+
+.toolTipTheMostLast .toolTipText {
+    left: -115px;
 }
 
 .toolTip:hover .toolTipText {
@@ -720,7 +724,11 @@ details[open] .drop-item{
 }
 
 .toolTipLast .toolTipText::after {
-    left: 57%;
+    left: 75%;
+}
+
+.toolTipTheMostLast .toolTipText::after {
+    left: 88%;
 }
 
 
