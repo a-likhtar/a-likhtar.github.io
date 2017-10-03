@@ -512,7 +512,7 @@ input[type="text"]:focus {
 #about {
     position: sticky;
     top:0;
-    background-color: #F1EFEF;
+    background-color: #F5F4F4;
     border: none;
     z-index: 1;
 }
@@ -599,6 +599,22 @@ details summary{
     border-bottom: 1px solid #d3d3d3;
 }
 
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details[open] .drop-item{
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+}
+
 #about-channel .drop-item {
     padding: 5px;
     border: 1px solid #D3D3D3;
@@ -621,12 +637,6 @@ details summary{
     height: 10px; 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #FDFDFB 100%);
    }
-
-.menu_list:active ~ .drop-items, 
-.menu_list:focus ~ .drop-items, 
-.drop-items:hover{
-    display: flex;
-}
 
 /* Pinned items */
 .date {
@@ -654,11 +664,52 @@ details summary{
     transition-duration: 200ms;    
 }
 
+.animationOnHoverBackground:hover {
+    transition-property: background-color;
+    transition-duration: 200ms;    
+}
 .addReaction i:hover {
     transition-property: color;
     transition-duration: 200ms;
 }
 
+.toolTip {
+    display: inline-block;
+    position: relative;
+}
+
+.toolTip .toolTipText {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 16px;
+    width:200px;
+    top: 25px;
+    left: 50%; 
+    margin-left: -60px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 500;
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible;
+}
+
+.toolTip .toolTipText::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
 
 
 
