@@ -333,7 +333,7 @@ input[type="text"]:focus {
 #messages {
     min-width: 300px;
     width:100%;
-    height: 95%;
+    height: 100%;
     min-height: 300px;
     overflow: auto;
 }
@@ -370,14 +370,19 @@ input[type="text"]:focus {
 }
 
 #messages .row-container:hover {
-    background-color:#F5F4F4;     
+    background-color:#F8F5F5;
+    transition-property: background-color;
+    transition-duration: 200ms;     
 }
+
 
 .date-line-wrapper {
     width: 100%; 
     height: 20px; 
     border-bottom: 1px solid #CEC2C2; 
     text-align: center;
+    position: sticky;
+    top: -20px;
 }
 
 .date-line {
@@ -421,11 +426,12 @@ input[type="text"]:focus {
     display:flex;
     width: 97%;
     max-width: 1300px;
+    max-height: 100px;
     margin:10px;
     box-sizing: border-box;
     border:2px solid #696262;
     border-radius: 5px;
-    height:50px;
+    height:auto;
 }
 
 #inputMessagesSmile {
@@ -441,23 +447,20 @@ input[type="text"]:focus {
 
 #inputMessagesSmile i.fa-at:hover{
     cursor: pointer;
-    color:#0085DD;
     transition-duration: 150ms;
     transition-property: all;
-    transition-timing-function: linear;
-    transform: scale(1.25,1.25);
-}
-#inputMessagesSmile i.fa-smile-o:hover{
-    cursor: pointer;
-    color:#FCE727;
-    transition-duration: 150ms;
-    transition-property: all;
+    color:#0085DD;        
     transition-timing-function: linear;
     transform: scale(1.25,1.25);
 }
 
-#inputMessagesSmile i:hover {
-    font-size: 20px;
+#inputMessagesSmile i.fa-smile-o:hover{
+    cursor: pointer;
+    color: rgba(241, 241, 11, 0.79);
+    transition-duration: 150ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    transform: scale(1.25,1.25);
 }
 
 #plus {
@@ -481,7 +484,6 @@ input[type="text"]:focus {
     padding: 0 10px;
     font-size: 16px;
     width: 100%;
-    max-height: 100px;
     overflow-y:auto;
     line-height: 1.75;
     padding: 5px 5px;
@@ -506,6 +508,15 @@ input[type="text"]:focus {
 }
 
 /* About channels */
+
+#about {
+    position: sticky;
+    top:0;
+    background-color: #F1EFEF;
+    border: none;
+    z-index: 1;
+}
+
 #about p{
     font-weight: bold;
     font-size: 18px;
@@ -522,9 +533,10 @@ input[type="text"]:focus {
     padding: 20px 10px;
 }
 
-#about-channel .row-container:hover {
+#about-channel summary:hover {
     background-color: #F5F4F4;
-
+    transition-property: background-color;
+    transition-duration: 200ms;
 }
 
 #about-channel span{
@@ -575,24 +587,30 @@ input[type="text"]:focus {
     color:#E4D533;        
 }
 /* Drop down menu for channel details */
-.drop-items {
-    padding: 10px 15px;
+details summary::-webkit-details-marker {
+    float: right;
+    position: relative;
+    top: 30px;
+    right: 10px;
 }
 
-.drop-items li.column-container {
+details summary{
+    outline: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#about-channel .drop-item {
+    padding: 5px;
     border: 1px solid #D3D3D3;
     border-radius: 5px;
-    margin:5px;
-}
-
-.drop-items li.column-container {
-    padding: 5px 10px;
-    color: black;
-}
-
-.drop-item {
+    margin:15px;
     height: 150px;
     overflow: hidden;
+}
+
+#about-channel .column-container {
+    padding: 5px 10px;
+    color: #3B3B3B;
 }
 
 .drop-item::after {
@@ -604,9 +622,6 @@ input[type="text"]:focus {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #FDFDFB 100%);
    }
 
-.drop-items{
-    display: none;
-}
 .menu_list:active ~ .drop-items, 
 .menu_list:focus ~ .drop-items, 
 .drop-items:hover{
@@ -632,6 +647,16 @@ input[type="text"]:focus {
 .contentMessage p{
     margin: 5px 0;
     font-size: 16px;
+}
+
+.animationOnHover:hover {
+    transition-property: color;
+    transition-duration: 200ms;    
+}
+
+.addReaction i:hover {
+    transition-property: color;
+    transition-duration: 200ms;
 }
 
 

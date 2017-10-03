@@ -44,7 +44,7 @@
         <div class="flex-element" id="menu">
             <div id="userInfo" class="menuBlocks hovered">
                 <p style="color:white">AIS <i class="fa fa-angle-down" id="toggleBtn" aria-hidden="true"></i></p>
-                <i class="fa fa-bell-o" aria-hidden="true" id="bell"></i>
+                <i class="fa fa-bell-o animationOnHover" aria-hidden="true" id="bell"></i>
                 <div>
                     <i class="online">&#9679</i>
                     <p>Andrey Likhtar</p>
@@ -101,19 +101,19 @@
                     <div id="icons">
                         <a href="#">
                             <div>
-                                <i class="fa fa-star-o yellow-hover" aria-hidden="true"></i>
+                                <i class="fa fa-star-o yellow-hover animationOnHover" aria-hidden="true"></i>
                             </div>
                         </a>
                         <div class="vertical"></div>
                         <a href="#">
                             <div>
-                                <i class="fa fa-user-o blue-hover" aria-hidden="true"><span>  14</span></i>
+                                <i class="fa fa-user-o blue-hover animationOnHover" aria-hidden="true"><span>  14</span></i>
                             </div>
                         </a>
                         <div class="vertical"></div>
                         <a href="#">
                             <div>
-                                <i class="fa fa-thumb-tack blue-hover" aria-hidden="true"><span>  28</span></i>
+                                <i class="fa fa-thumb-tack blue-hover animationOnHover" aria-hidden="true"><span>  28</span></i>
                             </div>
                         </a>
                         <div class="vertical"></div>
@@ -132,12 +132,12 @@
                         </div>
                         <a href="#">
                             <div>
-                                <i class="blue-hover">ⓘ</i>
+                                <i class="blue-hover animationOnHover">ⓘ</i>
                             </div>
                         </a>
                         <a href="#">
                             <div>
-                                <i class="fa fa-cog blue-hover" aria-hidden="true"></i>
+                                <i class="fa fa-cog blue-hover animationOnHover" aria-hidden="true"></i>
                             </div>
                         </a>
                         <div class="searchField">
@@ -146,17 +146,17 @@
                         </div>
                         <a href="#">
                             <div>
-                                <i class="fa fa-at red-hover" aria-hidden="true"></i>
+                                <i class="fa fa-at red-hover animationOnHover" aria-hidden="true"></i>
                             </div>
                         </a>
                         <a href="#">
                             <div>
-                                <i class="fa fa-star-o yellow-hover" aria-hidden="true"></i>
+                                <i class="fa fa-star-o yellow-hover animationOnHover" aria-hidden="true"></i>
                             </div>
                         </a>
                         <a href="#">
                             <div>
-                                <i class="fa fa-ellipsis-v blue-hover" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v blue-hover animationOnHover" aria-hidden="true"></i>
                             </div>
                         </a>
                 </div>
@@ -319,6 +319,11 @@
 
                             </div>
                         </div>
+                        <div class="date-line-wrapper">
+                            <span class="date-line">
+                                        Tuesday, October 3rd                                      
+                                </span>
+                        </div>
                         <div class="row-container">
                             <div class="userPicture">
                                 <img src="images/cats/cat2.png">
@@ -447,6 +452,38 @@
 
                             </div>
                         </div>
+                        <div class="row-container">
+                            <div class="userPicture">
+                                <img src="images/cats/cat3.png">
+                            </div>
+                            <div class="column-container message">
+                                <p class="userHeader">Kitty</p>
+                                <p>Ahaha</p>
+                            </div>
+                            <div class="addReaction">
+                                <i class="fa fa-smile-o blue"></i>
+                                <i class="fa fa-commenting-o blue"></i>
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+                        <div class="row-container">
+                            <div class="userPicture">
+                                <img src="images/cats/cat3.png">
+                            </div>
+                            <div class="column-container message">
+                                <p class="userHeader">Kitty</p>
+                                <p>Lol</p>
+                            </div>
+                            <div class="addReaction">
+                                <i class="fa fa-smile-o blue"></i>
+                                <i class="fa fa-commenting-o blue"></i>
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
 
                     </div>
                     <div id="inputMessage">
@@ -454,104 +491,105 @@
                         <div contenteditable="true" id="input" placeholder="Message #study">
                         </div>
                         <div id="inputMessagesSmile">
-                            <i class="fa fa-at" aria-hidden="true"></i>
+                            <i class="fa fa-at animationOnHover" aria-hidden="true"></i>
                             <i class="fa fa-smile-o" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
                 <div id="about-channel">
-                    <ul>
-                        <li>
-                            <div class="row-container" id="about">
-                                <p>About #study</p>
-                                <a href="#">
+
+                    <div class="row-container" id="about">
+                        <p>About #study</p>
+                        <a href="#">
                                     <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="row-container">
+                        </a>
+                    </div>
+
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i>ⓘ</i>
                                 <span>Channel Details</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="row-container">
+                            </div>
+                        </summary>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i class="fa fa-star-o blue-color" aria-hidden="true"></i>
                                 <span>Highlights</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="row-container menu_list">
+                            </div>
+                        </summary>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i class="fa fa-thumb-tack orange-color" aria-hidden="true"></i>
                                 <span>20 pinned items</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                            <ul class="column-container drop-items">
-                                <li class="column-container drop-item">
-                                    <div class="row-container">
-                                        <p>Alexander Shein</p>
-                                        <p class="date">Sep 11th</p>
-                                    </div>
-                                    <div class="column-container contentMessage">
-                                        <p>Всем привет</p>
-                                        <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
-                                        </p>
-                                        <p>Второе: сегодня презентация будет записанная, поэтому смотрим</p>
-                                    </div>
-                                </li>
-                                <li class="column-container drop-item">
-                                    <div class="row-container">
-                                        <p>Ilya Mokin</p>
-                                        <p class="date">Sep 11th</p>
-                                    </div>
-                                    <div class="column-container contentMessage">
-                                        <p>Ссылки <a href="#">https://habrahabr.ru/post/337528</a></p>
-                                        <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="column-container drop-item">
-                                    <div class="row-container">
-                                        <p>Ilya Mokin</p>
-                                        <p class="date">Sep 11th</p>
-                                    </div>
-                                    <div class="column-container contentMessage">
-                                        <p>Всем привет</p>
-                                        <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
-                                        </p>
-                                        <p>Второе: сегодня презентация будет записанная</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </li>
-
-                        <li>
-                            <a href="#" class="row-container">
+                            </div>
+                        </summary>
+                        <div class="column-container drop-item">
+                            <div class="row-container">
+                                <p>Alexander Shein</p>
+                                <p class="date">Sep 11th</p>
+                            </div>
+                            <div class="column-container contentMessage">
+                                <p>Всем привет</p>
+                                <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
+                                </p>
+                                <p>Второе: сегодня презентация будет записанная, поэтому смотрим</p>
+                            </div>
+                        </div>
+                        <div class="column-container drop-item">
+                            <div class="row-container">
+                                <p>Ilya Mokin</p>
+                                <p class="date">Sep 11th</p>
+                            </div>
+                            <div class="column-container contentMessage">
+                                <p>Ссылки <a href="#">https://habrahabr.ru/post/337528</a></p>
+                                <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-container drop-item">
+                            <div class="row-container">
+                                <p>Ilya Mokin</p>
+                                <p class="date">Sep 11th</p>
+                            </div>
+                            <div class="column-container contentMessage">
+                                <p>Всем привет</p>
+                                <p>Во-первых, надо сегодня завершить все задания по SQL, которые у вас висят.
+                                </p>
+                                <p>Второе: сегодня презентация будет записанная</p>
+                            </div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i class="fa fa-user-o green-color" aria-hidden="true"></i>
                                 <span>Members</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="row-container">
+                            </div>
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i class="fa fa-files-o yellow-color" aria-hidden="true"></i>
                                 <span>Shared files</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="row-container">
+                            </div>
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="row-container">
                                 <i class="fa fa-bell-o pink-color" aria-hidden="true"></i>
                                 <span>Notification Preferences</span>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-
+                            </div>
+                        </summary>
+                    </details>
                 </div>
             </div>
         </div>
