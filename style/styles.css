@@ -4,6 +4,10 @@ body, html {
     font-family: 'Lato', sans-serif;
 }
 
+span {
+    font-family: 'Lato', sans-serif;    
+}
+
 /* Common styles */
 .flex-container {
     font-size: 20px;
@@ -594,7 +598,7 @@ details summary::-webkit-details-marker {
     right: 10px;
 }
 
-details summary{
+details summary {
     outline: none;
     border-bottom: 1px solid #d3d3d3;
 }
@@ -696,6 +700,10 @@ details[open] .drop-item{
     z-index: 500;
 }
 
+.toolTipLast .toolTipText {
+    left: -50px;
+}
+
 .toolTip:hover .toolTipText {
     visibility: visible;
 }
@@ -704,11 +712,15 @@ details[open] .drop-item{
     content: " ";
     position: absolute;
     bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
+    left: 30%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
+}
+
+.toolTipLast .toolTipText::after {
+    left: 57%;
 }
 
 
