@@ -412,7 +412,7 @@ input[type="text"]:focus {
 }
 
 .addReaction i:hover {
-    color:#217DE0;
+    color:#0F69CA;
     cursor: pointer; 
 }
 
@@ -733,9 +733,22 @@ details[open] .drop-item{
     left: 88%;
 }
 
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    width:8px;
+}
 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#D8D8D8;
+    box-shadow: inset 0 0 6px rgba(177, 177, 177, 0.3); 
+}
 
-
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    background-clip: content-box;
+}
 
 
 
