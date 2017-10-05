@@ -347,7 +347,6 @@ input[type="text"]:focus {
     width:100%;
     flex: 1 1 auto;
     min-height: 300px;
-    overflow: auto;
 }
 
 .message {
@@ -420,7 +419,7 @@ input[type="text"]:focus {
 }
 
 .addReaction i:hover {
-    color:#217DE0;
+    color:#0F69CA;
     cursor: pointer; 
 }
 
@@ -740,8 +739,6 @@ details[open] .drop-item{
 .toolTipTheMostLast .toolTipText::after {
     left: 88%;
 }
-
-
 
 
 
