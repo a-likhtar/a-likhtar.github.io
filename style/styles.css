@@ -12,7 +12,11 @@ span {
 .flex-container {
     font-size: 20px;
     display: flex;
-    height:100%; 
+}
+
+#wrapper {
+    height: 100%;
+    display: flex;
 }
 
 #slack-teams{
@@ -30,7 +34,6 @@ span {
 
 #about-channel {
     width:25%;
-    height: 100%;
     min-width: 250px;
     border-left:1px solid #D3D3D3;
     font-size:18px;
@@ -40,6 +43,7 @@ span {
 
 #main-area {
     width: 100%;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -326,18 +330,22 @@ input[type="text"]:focus {
 
 #midArea {
     display: flex;
+    position: relative;
+    flex: 1 1 auto;
+    overflow: auto;
 }
 
 #messageArea{
     width: 75%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 /* Messages */
 #messages {
     min-width: 300px;
     width:100%;
-    height: 100%;
+    flex: 1 1 auto;
     min-height: 300px;
     overflow: auto;
 }
